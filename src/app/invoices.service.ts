@@ -31,6 +31,24 @@ export class InvoicesService {
     return this.getShowdata
   }
 
+  putData(id:any, body:any) {
+
+   return this.http.put(`http://localhost:3000/invoices/${id}`,body)
+
+  }
+  
+  currentId:any
+  setId(id:any) {
+
+     this.currentId = id
+  }
+
+  getId():any {
+
+    return this.currentId
+
+  }
+
 
 
 }

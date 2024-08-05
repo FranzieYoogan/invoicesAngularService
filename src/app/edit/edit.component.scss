@@ -1,0 +1,24 @@
+.formStyle {
+
+    display:  flex;
+    justify-content: center;
+    margin-top: 5em;
+
+}
+
+
+
+input:hover, input:active, input:focus {
+
+    border: 1px solid green;
+    box-shadow: none ;
+
+}
+
+.containerButton  {
+
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+
+}

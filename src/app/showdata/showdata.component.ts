@@ -60,5 +60,3 @@ export class ShowdataComponent implements OnInit {
     }
   }
 }
-
-

@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { InvoicesService } from '../invoices.service';
 import { Router } from '@angular/router';
@@ -35,6 +36,19 @@ export class ItemsComponent implements OnInit {
     })
 
     this.router.navigate(['/showdata'])
+
+  }
+
+  edit(item:any) {
+
+
+
+    this.invoices.setId(item)
+    console.log(this.invoices.getId())
+
+    this.router.navigate(['/edit'])
+
+
 
   }
 

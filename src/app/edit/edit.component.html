@@ -1,0 +1,50 @@
+<form class="formStyle" (submit)="submit($event)">
+
+    <div>
+
+  
+    <div>
+        <label for="description" class="labelDescription block mb-2 text-sm font-medium text-gray-900 dark:text-white">Item Description</label>
+        <input type="text" id="description" class="inputDescription bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+    </div>
+    
+    <div style="display: flex; gap: 1em; margin-top: 1em;">
+
+   
+    <div>
+        <label for="Quantity" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
+        <input type="number" id="quantity" class="input2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+    </div>
+
+    <div>
+        <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
+        <input type="number" id="price" class="input2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+    </div>
+
+    <div>
+        <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">amount</label>
+        <input type="number" id="amount" class="input2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+    </div>
+
+</div>
+
+<div class="containerButton">
+
+
+<div>
+
+    <button type="submit"  class="buttonStyle focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Edit Items</button>
+
+</div>
+
+<div>
+
+    <button type="button" (click)="back()"  class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Back to Home</button>
+
+</div>
+
+</div>
+
+</div>
+
+</form>

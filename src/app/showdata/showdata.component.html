@@ -1,0 +1,57 @@
+<section id="containerAll">
+
+
+
+<img class="imageStyle" src="/images/table.png" alt="">
+
+
+
+<div class="relative overflow-x-auto">
+    <table class=" w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="fullStyle px-6 py-3 rounded-s-lg">
+                    Description
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Quantity
+                </th>
+                <th scope="col" class="px-6 py-3 rounded-e-lg">
+                    Price
+                </th>
+                <th scope="col" class="px-6 py-3 rounded-e-lg">
+                    Amount
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    {{data.description}}
+                </th>
+                <td class="px-6 py-4">
+                    {{data.quantity}}
+                </td>
+                <td class="px-6 py-4">
+                    {{data.price}}
+                </td>
+                <td class="px-6 py-4">
+                    {{data.amount}}
+                </td>
+            </tr>
+         
+        </tbody>
+        <tfoot>
+            <tr class="font-semibold text-gray-900 dark:text-white">
+                <th scope="row" class="px-6 py-3 text-base">GBP</th>
+                
+                <td>{{data.amount}}</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+</section>
+
+<button type="button" (click)="generatePdf()" class="buttonStyle focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Convert to PDF</button>
+

@@ -1,0 +1,85 @@
+.imgStyle {
+
+    height: 45vh;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.formStyle {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.inputDescription {
+
+    width: 700px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .inputDescription {
+
+        width: 300px;
+        margin-left: 1em;
+    }
+
+    .labelDescription {
+
+        margin-left: 1em;
+
+    }
+
+    .containerButton {
+
+       margin-left: 1em;
+    
+    }
+
+    .input2 {
+
+        width: 100px;
+
+    }
+  }
+
+  @media only screen and (width: 320px) {
+    .inputDescription {
+
+        width: 300px;
+        margin-left: 1em;
+    }
+
+    .labelDescription {
+
+        margin-left: 1em;
+
+    }
+
+    .containerButton {
+
+       margin-left: 1em;
+    
+    }
+
+    .input2 {
+
+        width: 80px;
+        margin-left: 0.5em;
+    }
+  }
+
+.containerButton {
+
+    margin-top: 1em;
+    display: flex;
+
+}
+
+input:hover, input:active, input:focus {
+
+    border: 1px solid green;
+    box-shadow: none;
+
+}

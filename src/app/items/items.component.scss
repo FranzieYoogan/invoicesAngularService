@@ -1,0 +1,34 @@
+.editStyle {
+
+    width: 15px;
+    position: absolute;
+    left: 40%;
+    cursor: pointer;
+}
+
+.eyeStyle {
+
+    width: 15px;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .editStyle {
+
+        width: 15px;
+        position: absolute;
+        left: 65%;
+    }
+
+    .eyeStyle {
+
+        width: 15px;
+        position: absolute;
+        left: 85%;
+        cursor: pointer;
+    }
+    
+
+  }

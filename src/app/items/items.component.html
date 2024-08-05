@@ -1,0 +1,45 @@
+
+
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Item Description
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Quantity
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Price
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Amount
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of data; track item._id) {
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+             
+            
+
+                    <td class="px-6 py-4">
+                        {{item.description}}
+                    </td>
+
+                <td class="px-6 py-4">
+                    {{item.quantity}}
+                </td>
+                <td class="px-6 py-4">
+                    {{item.price}}
+                </td>
+                <td class="px-6 py-4" style="display: flex; position: relative;">
+                    {{item.amount}} <img class="editStyle" src="/icons/edit.png" alt=""> <img (click)="showData(item._id)" class="eyeStyle" src="/icons/eye.png" alt="">
+                </td>
+          
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

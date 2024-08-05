@@ -52,4 +52,10 @@ export class ItemsComponent implements OnInit {
 
   }
 
+  back() {
+
+    this.router.navigate(['/'])
+
+  }
+
 }

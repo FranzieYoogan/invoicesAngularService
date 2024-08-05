@@ -3,6 +3,7 @@ import { InvoicesService } from '../invoices.service';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas'
 import jspdf from 'jspdf';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-showdata',
@@ -13,7 +14,7 @@ import jspdf from 'jspdf';
 })
 export class ShowdataComponent implements OnInit {
 
-  constructor(private invoices: InvoicesService){}
+  constructor(private invoices: InvoicesService, private router: Router){}
 
   data:any
   ngOnInit(): void {
@@ -59,4 +60,11 @@ export class ShowdataComponent implements OnInit {
       console.error('Element with id "containerAll" not found');
     }
   }
+
+  back() {
+
+    this.router.navigate(['/'])
+
+  }
+
 }
